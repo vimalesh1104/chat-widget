@@ -1,0 +1,34 @@
+import { CommonModule } from '@angular/common';
+import { HttpClient } from '@angular/common/http';
+import { NO_ERRORS_SCHEMA, NgModule } from '@angular/core';
+import { ConfirmationService } from 'primeng/api';
+import { PermissionStore } from './@core/permissions/permission.store';
+import { KeysPipe } from './@core/pipes/array-keys.pipe';
+import { AlertService } from './@core/service/alert.service';
+import { ChatBotRasaService } from './@core/service/chatbot-rasa.service';
+import { DataStoreService } from './@core/service/data-store.service';
+import { HttpService } from './@core/service/http.service';
+import { ChatAvatarComponent } from './chat-redbird-ai/chat-avatar/chat-avatar.component';
+import { ChatConfigComponent } from './chat-redbird-ai/chat-config/chat-config.component';
+import { ChatInputComponent } from './chat-redbird-ai/chat-input/chat-input.component';
+import { ChatWidgetComponent } from './chat-redbird-ai/chat-widget/chat-widget.component';
+import * as i0 from "@angular/core";
+export class PicsChatRedbirdAiModule {
+}
+PicsChatRedbirdAiModule.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "12.2.17", ngImport: i0, type: PicsChatRedbirdAiModule, deps: [], target: i0.ɵɵFactoryTarget.NgModule });
+PicsChatRedbirdAiModule.ɵmod = i0.ɵɵngDeclareNgModule({ minVersion: "12.0.0", version: "12.2.17", ngImport: i0, type: PicsChatRedbirdAiModule, declarations: [ChatAvatarComponent, ChatWidgetComponent, ChatInputComponent, ChatConfigComponent, KeysPipe], imports: [CommonModule], exports: [ChatWidgetComponent, ChatConfigComponent] });
+PicsChatRedbirdAiModule.ɵinj = i0.ɵɵngDeclareInjector({ minVersion: "12.0.0", version: "12.2.17", ngImport: i0, type: PicsChatRedbirdAiModule, providers: [ChatBotRasaService, HttpClient, HttpService, AlertService, ConfirmationService, PermissionStore, DataStoreService], imports: [[CommonModule]] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "12.2.17", ngImport: i0, type: PicsChatRedbirdAiModule, decorators: [{
+            type: NgModule,
+            args: [{
+                    declarations: [
+                        ChatAvatarComponent, ChatWidgetComponent, ChatInputComponent, ChatConfigComponent, KeysPipe
+                    ],
+                    imports: [CommonModule],
+                    exports: [ChatWidgetComponent, ChatConfigComponent],
+                    entryComponents: [ChatWidgetComponent, ChatConfigComponent],
+                    providers: [ChatBotRasaService, HttpClient, HttpService, AlertService, ConfirmationService, PermissionStore, DataStoreService],
+                    schemas: [NO_ERRORS_SCHEMA]
+                }]
+        }] });
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGljcy1jaGF0LXJlZGJpcmQtYWkubW9kdWxlLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vLi4vLi4vLi4vLi4vcHJvamVjdHMvcGljcy1tb2R1bGUvY2hhdC1yZWRiaXJkLWFpL3NyYy9saWIvcGljcy1jaGF0LXJlZGJpcmQtYWkvcGljcy1jaGF0LXJlZGJpcmQtYWkubW9kdWxlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLE9BQU8sRUFBRSxZQUFZLEVBQUUsTUFBTSxpQkFBaUIsQ0FBQztBQUMvQyxPQUFPLEVBQUUsVUFBVSxFQUFFLE1BQU0sc0JBQXNCLENBQUM7QUFDbEQsT0FBTyxFQUFFLGdCQUFnQixFQUFFLFFBQVEsRUFBRSxNQUFNLGVBQWUsQ0FBQztBQUMzRCxPQUFPLEVBQUUsbUJBQW1CLEVBQUUsTUFBTSxhQUFhLENBQUM7QUFDbEQsT0FBTyxFQUFFLGVBQWUsRUFBRSxNQUFNLHNDQUFzQyxDQUFDO0FBQ3ZFLE9BQU8sRUFBRSxRQUFRLEVBQUUsTUFBTSwrQkFBK0IsQ0FBQztBQUN6RCxPQUFPLEVBQUUsWUFBWSxFQUFFLE1BQU0sK0JBQStCLENBQUM7QUFDN0QsT0FBTyxFQUFFLGtCQUFrQixFQUFFLE1BQU0sc0NBQXNDLENBQUM7QUFDMUUsT0FBTyxFQUFFLGdCQUFnQixFQUFFLE1BQU0sb0NBQW9DLENBQUM7QUFDdEUsT0FBTyxFQUFFLFdBQVcsRUFBRSxNQUFNLDhCQUE4QixDQUFDO0FBQzNELE9BQU8sRUFBRSxtQkFBbUIsRUFBRSxNQUFNLHFEQUFxRCxDQUFDO0FBQzFGLE9BQU8sRUFBRSxtQkFBbUIsRUFBRSxNQUFNLHFEQUFxRCxDQUFDO0FBQzFGLE9BQU8sRUFBRSxrQkFBa0IsRUFBRSxNQUFNLG1EQUFtRCxDQUFDO0FBQ3ZGLE9BQU8sRUFBRSxtQkFBbUIsRUFBRSxNQUFNLHFEQUFxRCxDQUFDOztBQWExRixNQUFNLE9BQU8sdUJBQXVCOztxSEFBdkIsdUJBQXVCO3NIQUF2Qix1QkFBdUIsaUJBUmhDLG1CQUFtQixFQUFFLG1CQUFtQixFQUFFLGtCQUFrQixFQUFFLG1CQUFtQixFQUFFLFFBQVEsYUFFbkYsWUFBWSxhQUNaLG1CQUFtQixFQUFFLG1CQUFtQjtzSEFLdkMsdUJBQXVCLGFBSHZCLENBQUMsa0JBQWtCLEVBQUUsVUFBVSxFQUFFLFdBQVcsRUFBRSxZQUFZLEVBQUUsbUJBQW1CLEVBQUUsZUFBZSxFQUFFLGdCQUFnQixDQUFDLFlBSHJILENBQUMsWUFBWSxDQUFDOzRGQU1aLHVCQUF1QjtrQkFWbkMsUUFBUTttQkFBQztvQkFDUixZQUFZLEVBQUU7d0JBQ1osbUJBQW1CLEVBQUUsbUJBQW1CLEVBQUUsa0JBQWtCLEVBQUUsbUJBQW1CLEVBQUUsUUFBUTtxQkFDNUY7b0JBQ0QsT0FBTyxFQUFFLENBQUMsWUFBWSxDQUFDO29CQUN2QixPQUFPLEVBQUUsQ0FBQyxtQkFBbUIsRUFBRSxtQkFBbUIsQ0FBQztvQkFDbkQsZUFBZSxFQUFFLENBQUMsbUJBQW1CLEVBQUUsbUJBQW1CLENBQUM7b0JBQzNELFNBQVMsRUFBRSxDQUFDLGtCQUFrQixFQUFFLFVBQVUsRUFBRSxXQUFXLEVBQUUsWUFBWSxFQUFFLG1CQUFtQixFQUFFLGVBQWUsRUFBRSxnQkFBZ0IsQ0FBQztvQkFDOUgsT0FBTyxFQUFFLENBQUMsZ0JBQWdCLENBQUM7aUJBQzVCIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgQ29tbW9uTW9kdWxlIH0gZnJvbSAnQGFuZ3VsYXIvY29tbW9uJztcclxuaW1wb3J0IHsgSHR0cENsaWVudCB9IGZyb20gJ0Bhbmd1bGFyL2NvbW1vbi9odHRwJztcclxuaW1wb3J0IHsgTk9fRVJST1JTX1NDSEVNQSwgTmdNb2R1bGUgfSBmcm9tICdAYW5ndWxhci9jb3JlJztcclxuaW1wb3J0IHsgQ29uZmlybWF0aW9uU2VydmljZSB9IGZyb20gJ3ByaW1lbmcvYXBpJztcclxuaW1wb3J0IHsgUGVybWlzc2lvblN0b3JlIH0gZnJvbSAnLi9AY29yZS9wZXJtaXNzaW9ucy9wZXJtaXNzaW9uLnN0b3JlJztcclxuaW1wb3J0IHsgS2V5c1BpcGUgfSBmcm9tICcuL0Bjb3JlL3BpcGVzL2FycmF5LWtleXMucGlwZSc7XHJcbmltcG9ydCB7IEFsZXJ0U2VydmljZSB9IGZyb20gJy4vQGNvcmUvc2VydmljZS9hbGVydC5zZXJ2aWNlJztcclxuaW1wb3J0IHsgQ2hhdEJvdFJhc2FTZXJ2aWNlIH0gZnJvbSAnLi9AY29yZS9zZXJ2aWNlL2NoYXRib3QtcmFzYS5zZXJ2aWNlJztcclxuaW1wb3J0IHsgRGF0YVN0b3JlU2VydmljZSB9IGZyb20gJy4vQGNvcmUvc2VydmljZS9kYXRhLXN0b3JlLnNlcnZpY2UnO1xyXG5pbXBvcnQgeyBIdHRwU2VydmljZSB9IGZyb20gJy4vQGNvcmUvc2VydmljZS9odHRwLnNlcnZpY2UnO1xyXG5pbXBvcnQgeyBDaGF0QXZhdGFyQ29tcG9uZW50IH0gZnJvbSAnLi9jaGF0LXJlZGJpcmQtYWkvY2hhdC1hdmF0YXIvY2hhdC1hdmF0YXIuY29tcG9uZW50JztcclxuaW1wb3J0IHsgQ2hhdENvbmZpZ0NvbXBvbmVudCB9IGZyb20gJy4vY2hhdC1yZWRiaXJkLWFpL2NoYXQtY29uZmlnL2NoYXQtY29uZmlnLmNvbXBvbmVudCc7XHJcbmltcG9ydCB7IENoYXRJbnB1dENvbXBvbmVudCB9IGZyb20gJy4vY2hhdC1yZWRiaXJkLWFpL2NoYXQtaW5wdXQvY2hhdC1pbnB1dC5jb21wb25lbnQnO1xyXG5pbXBvcnQgeyBDaGF0V2lkZ2V0Q29tcG9uZW50IH0gZnJvbSAnLi9jaGF0LXJlZGJpcmQtYWkvY2hhdC13aWRnZXQvY2hhdC13aWRnZXQuY29tcG9uZW50JztcclxuXHJcblxyXG5ATmdNb2R1bGUoe1xyXG4gIGRlY2xhcmF0aW9uczogW1xyXG4gICAgQ2hhdEF2YXRhckNvbXBvbmVudCwgQ2hhdFdpZGdldENvbXBvbmVudCwgQ2hhdElucHV0Q29tcG9uZW50LCBDaGF0Q29uZmlnQ29tcG9uZW50LCBLZXlzUGlwZVxyXG4gIF0sXHJcbiAgaW1wb3J0czogW0NvbW1vbk1vZHVsZV0sXHJcbiAgZXhwb3J0czogW0NoYXRXaWRnZXRDb21wb25lbnQsIENoYXRDb25maWdDb21wb25lbnRdLFxyXG4gIGVudHJ5Q29tcG9uZW50czogW0NoYXRXaWRnZXRDb21wb25lbnQsIENoYXRDb25maWdDb21wb25lbnRdLFxyXG4gIHByb3ZpZGVyczogW0NoYXRCb3RSYXNhU2VydmljZSwgSHR0cENsaWVudCwgSHR0cFNlcnZpY2UsIEFsZXJ0U2VydmljZSwgQ29uZmlybWF0aW9uU2VydmljZSwgUGVybWlzc2lvblN0b3JlLCBEYXRhU3RvcmVTZXJ2aWNlXSxcclxuICBzY2hlbWFzOiBbTk9fRVJST1JTX1NDSEVNQV1cclxufSlcclxuZXhwb3J0IGNsYXNzIFBpY3NDaGF0UmVkYmlyZEFpTW9kdWxlIHsgfVxyXG4iXX0=
